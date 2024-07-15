@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/doubletapp-test/static/css/main.07b3367e.css",
-    "main.js": "/doubletapp-test/static/js/main.0ba8e006.js",
-    "static/js/453.3deeaab7.chunk.js": "/doubletapp-test/static/js/453.3deeaab7.chunk.js",
-    "index.html": "/doubletapp-test/index.html",
-    "main.07b3367e.css.map": "/doubletapp-test/static/css/main.07b3367e.css.map",
-    "main.0ba8e006.js.map": "/doubletapp-test/static/js/main.0ba8e006.js.map",
-    "453.3deeaab7.chunk.js.map": "/doubletapp-test/static/js/453.3deeaab7.chunk.js.map"
+    "main.css": "/doubletapp-test2/static/css/main.07b3367e.css",
+    "main.js": "/doubletapp-test2/static/js/main.2e088e35.js",
+    "static/js/453.3deeaab7.chunk.js": "/doubletapp-test2/static/js/453.3deeaab7.chunk.js",
+    "index.html": "/doubletapp-test2/index.html",
+    "main.07b3367e.css.map": "/doubletapp-test2/static/css/main.07b3367e.css.map",
+    "main.2e088e35.js.map": "/doubletapp-test2/static/js/main.2e088e35.js.map",
+    "453.3deeaab7.chunk.js.map": "/doubletapp-test2/static/js/453.3deeaab7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.07b3367e.css",
-    "static/js/main.0ba8e006.js"
+    "static/js/main.2e088e35.js"
   ]
 }
