@@ -14,9 +14,9 @@ import StudentAdd from './pages/student++/StudentAdd';
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/doubletapp-test">
       <Routes>
-        <Route exact path="/" element={<Authorization />} />
+        <Route path="/" element={<Authorization />} />
         <Route path="/list" element={<List />} />
         <Route path='/student-add' element={<StudentAdd />} />
       </Routes>
