@@ -16,7 +16,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Authorization />} />
+        <Route exact path="/" element={<Authorization />} />
         <Route path="/list" element={<List />} />
         <Route path='/student-add' element={<StudentAdd />} />
       </Routes>
