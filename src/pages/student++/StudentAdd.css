@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+  }
+
+.add-page {
+    width: 100%;
+    height: 100%;
+    font-family: 'Geometria', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 86px;
+    box-shadow: 1px 1px 70px #00000012;
+    background-color: rgba(255, 255, 255, 1);
+    margin: 0;
+}
+
+.add-page-upper {
+    display: flex;
+    padding-left: 163px;
+    padding-right: 163px;
+    padding-top: 22px;
+}
+
+.add-page-wrapper {
+    padding-left: 163px;
+    padding-right: 163px;
+}
+
+
+.add-page-wrapper p {
+    margin: 0px;
+    margin-left: 35px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 44px;
+    text-align: center;
+}
+
+.add-page-wrapper span {
+    color: #49C2E8;
+}
+
+.header img {
+    width: 42px;
+    height: 42px;
+}
+
+.back-to-list-button {
+    cursor: pointer;
+}
+
+
+.add-new-student {
+    margin-top: 27px;
+    font-family: 'Geometria', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    background-color: #49C2E8;
+    border: none;
+    border-radius: 10px;
+    width: 340px;
+    height: 50px;
+    cursor: pointer;
+}
+

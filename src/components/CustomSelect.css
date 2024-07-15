@@ -1,0 +1,53 @@
+.custom-select {
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.select-box {
+    border: none;
+    padding: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 1px 1px 70px #00000012;
+    height: 50px;
+    font-family: 'Geometria', sans-serif;
+    font-size: 14px;
+}
+
+.select-box.open {
+    border-bottom: none;
+}
+
+.selected-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.options {
+    position: absolute;
+    width: 100%;
+    border: none;
+    background-color: #fff;
+}
+
+.option {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #49C2E81C;
+}
+
+.option.selected {
+    background-color: #49C2E81C;
+}
+
+.sort-icon {
+   margin-left: 5px;
+}

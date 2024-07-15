@@ -1,0 +1,457 @@
+* {
+    box-sizing: border-box;
+  }
+
+.list-page {
+    width: 100%;
+    height: 100%;
+    font-family: 'Geometria', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 86px;
+    box-shadow: 1px 1px 70px #00000012;
+    background-color: rgba(255, 255, 255, 1);
+    margin: 0;
+}
+
+.list-page-wrapper {
+    display: flex;
+    padding-left: 163px;
+    padding-right: 163px;
+    padding-top: 22px;
+}
+
+.list-page-wrapper p {
+    margin: 0px;
+    margin-left: 35px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 44px;
+    text-align: center;
+}
+
+.list-page-wrapper span {
+    color: #49C2E8;
+}
+
+.header img {
+    width: 42px;
+    height: 42px;
+}
+
+.high-box {
+    padding-left: 163px;
+    padding-right: 163px;
+    margin-top: 60px;
+    display: grid;
+}
+
+.upper-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.high-box h1 {
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+.add-student-button {
+    margin-top: 27px;
+    font-family: 'Geometria', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    background-color: #49C2E8;
+    border: none;
+    border-radius: 10px;
+    width: 340px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.add-student-button img {
+    margin-right: 12px;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.middle-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-by-name {
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    display: flex;
+    outline: none;
+    font-family: 'Geometria', sans-serif;
+    top: 28px;
+    border: none;
+    box-shadow: 1px 1px 70px #00000012;
+    background-size: 20px;
+    background: url('../../assets/Combined Shape.png') no-repeat scroll 15px 15px;
+    padding-left: 50px;
+}
+
+/* СОРТИРОВКА СТУДЕНТОВ */
+
+.custom-select {
+    margin-left: 10px;
+    margin-top: 10px;
+    position: relative;
+    border: none;
+    width: 180px;
+    height: 65px;
+
+}
+
+.custom-select select {
+    appearance: none;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 16px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 1px 1px 70px #00000012;
+  }
+
+
+
+  .sort-icon{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    left: 130px;
+    cursor: pointer;
+    pointer-events: none;
+  }
+
+/* i didnt found better way to make in look fine than using margin... i know its stupid, pardon me :( */
+
+.bottom-box-list {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.user-name-upper {
+    margin-right: 100px;
+    width: 106px;
+}
+
+.user-speciality-upper {
+    margin-right: 180px;
+    width: 86px;
+}
+
+.user-group-upper{
+    margin-right: 145px;
+    width: 56px;
+}
+
+.user-age-upper {
+    width: 56px;
+    margin-right: 140px;
+}
+
+.user-rating-upper {
+    width: 76px;
+    margin-right: 140px;
+}
+
+.list-box {
+    text-align: left;
+    padding-top: 25px;
+    box-shadow: 1px 1px 70px #00000012;
+}
+
+.student-info{
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.user-name {
+    margin-top: 10px;
+    margin-right: 170px;
+    width: 156px;
+}
+
+.user-speciality {
+    margin-right: 170px;
+    width: 56px;
+}
+
+.user-group-number {
+    margin-right: 130px;
+    width: 106px;
+}
+
+.user-age {
+    width: 56px;
+    margin-right: 130px;
+}
+
+.user-rating {
+    width: 86px;
+    margin-right: 130px;
+}
+
+.user-profile-pic {
+    object-fit: cover;
+    border: 2px solid #FFFFFF99;
+    height: 40px;
+    width: 40px;
+    border-radius: 300px;
+    margin-right: 25px;
+}
+
+.user-color {
+    max-width: 40px;
+    max-height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 100%;
+}
+
+.delete-icon {
+    cursor: pointer;
+    margin-left: 5px;
+    width: 55px;
+    padding-bottom: 10px;
+}
+
+/* информация об удаленном студенте */
+.message-box {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.delete-icon {
+    cursor: pointer;
+}
+
+
+/* ДРУГИЕ УСТРОЙСТВА */
+@media screen and (max-width: 1024px)  {
+
+    .list-page {
+        width: 100%;
+        height: 100%;
+        font-family: 'Geometria', sans-serif;
+        overflow-x: hidden;
+    }
+
+    .list-page-wrapper {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin-left: 15px;
+    }
+
+    .high-box {
+        padding-left: 20px;
+        margin-top: 20px;
+        display: grid;
+    }
+    
+    .upper-line {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .high-box h1 {
+        font-size: 40px;
+        margin-bottom: 35px;
+    }
+    
+    .add-student-button {
+        display: none;
+    }
+
+    .middle-line {
+        width: 100%;
+    }
+
+    .search-by-name {
+        min-width: 300px;
+    }
+
+
+    .custom-select {
+        width: 40px;
+        height: 65px;
+        left: 0%;
+    }
+    
+    .custom-select select {
+        appearance: none;
+        padding-left: 28px;
+        padding-right: 28px;
+        padding-bottom: 16px;
+        padding-top: 16px;
+        background-color: #fff;
+        border: none;
+        outline: none;
+        color: black;
+        cursor: pointer;
+        box-shadow: 1px 1px 70px #00000012;
+      }
+    
+    
+    
+      .sort-icon{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 15px;
+        left: 20px;
+      }
+
+    .bottom-box-list {
+        display: none;
+    }
+
+    .list-box {
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+    }
+    
+    .student-info {
+        display: grid;
+        grid-template-columns: 60px auto auto;
+        grid-template-rows: 40px auto auto;
+        gap: 10px;
+        margin-bottom: 16px;
+        box-shadow: 1px 1px 70px #00000012;
+    }
+    
+    .user-color, .user-rating, .delete-icon {
+        position: absolute;
+    }
+
+    .delete-icon {
+        margin-left: 80%;
+    }
+
+
+    .user-color {
+        max-width: 15px;
+        max-height: 15px;
+        min-width: 15px;
+        min-height: 15px;
+        margin-left: 34%;
+        margin-top: 4%;
+    }
+
+    .user-rating {
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 36.5%;
+        margin-top: 3.6%;
+        
+    }
+    
+    .user-name {
+        margin-left: 20px;
+        min-width: 200px;
+        font-size: 18px;
+        font-weight: bold;
+        grid-column: span 1;
+        
+    }
+
+    .user-profile-pic  {
+        grid-column: span 1;
+        margin-left: 45px;
+    }
+    
+
+    
+    .user-rating::before {
+        content: '★';
+        color: rgb(0, 0, 0);
+        margin-right: 5px;
+    }
+    
+    .user-age,
+    .user-speciality,
+    .user-group-number {
+        font-size: 14px;
+        color: #666;
+        grid-column: span 3;
+        margin-left: 80px;
+    }
+
+    .user-speciality {
+        margin-top: 25px;
+    }
+
+    .user-age {
+        margin-bottom: 20px;
+    }
+
+    .user-age::before,
+    .user-speciality::before,
+    .user-group-number::before {
+        content: '•';
+        margin-right: 5px;
+        color: #49C2E8;
+    }
+    
+    .user-age::after {
+        content: ' лет';
+    }
+
+    @media screen and (max-width: 576px)  {
+        .delete-icon {
+            margin-left: 80%;
+        }
+    
+    
+        .user-color {
+            margin-left: 12%;
+            margin-top: 9%;
+        }
+    
+        .user-rating {
+            font-size: 16px;
+            font-weight: 600;
+            margin-left: 17%;
+            margin-top: 8%;
+            
+        }
+    }
+
+}
